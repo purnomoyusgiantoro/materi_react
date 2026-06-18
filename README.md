@@ -61,8 +61,26 @@ materi_react/
 ├── cheatsheet/
 │   ├── javascript-dasar.md            ← Ringkasan JavaScript dasar
 │   └── perintah-terminal.md           ← Perintah terminal yang sering dipakai
-└── project/                           ← Folder untuk praktik (dibuat saat belajar)
+└── project-warung-digital/            ← 🏪 Project Bonus: Warung Sekolah Digital
+    ├── README.md                      ← Panduan project
+    ├── panduan-project.md             ← Step-by-step + 7 tantangan
+    ├── template-backend/              ← Template server (tinggal copy)
+    └── template-frontend/             ← Template React (tinggal copy)
 ```
+
+---
+
+## 🏪 Project Bonus: Warung Sekolah Digital
+
+Setelah menyelesaikan 3 JP materi dasar, kerjakan project yang lebih besar!
+
+- 🍔 Tampilan katalog menu makanan & minuman
+- 🛒 Fitur keranjang belanja
+- 💰 Kalkulasi harga otomatis
+- 🔍 Pencarian & filter kategori
+- 🔥 **7 tantangan** yang harus dikerjakan sendiri (ada hint-nya!)
+
+**👉 [Mulai Project Warung Digital](./project-warung-digital/README.md)**
 
 ---
 

@@ -1,0 +1,13 @@
+{
+  "name": "warung-backend",
+  "version": "1.0.0",
+  "description": "Backend API untuk Warung Sekolah Digital",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "cors": "^2.8.5"
+  }
+}
