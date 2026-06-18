@@ -61,7 +61,12 @@ materi_react/
 ├── cheatsheet/
 │   ├── javascript-dasar.md            ← Ringkasan JavaScript dasar
 │   └── perintah-terminal.md           ← Perintah terminal yang sering dipakai
-└── project-warung-digital/            ← 🏪 Project Bonus: Warung Sekolah Digital
+├── project-kartu-profil/              ← 🎨 Project Fun: Kartu Profil Keren (Pemula/SD-SMA)
+│   ├── README.md                      ← Panduan utama ala game / quest
+│   ├── panduan-misi.md                ← Step-by-step 5 Misi Kustomisasi
+│   ├── template-backend/              ← Template API Server
+│   └── template-frontend/             ← Template React (Vite)
+└── project-warung-digital/            ← 🏪 Project Menengah: Warung Sekolah Digital
     ├── README.md                      ← Panduan project
     ├── panduan-project.md             ← Step-by-step + 7 tantangan
     ├── template-backend/              ← Template server (tinggal copy)
@@ -70,9 +75,22 @@ materi_react/
 
 ---
 
-## 🏪 Project Bonus: Warung Sekolah Digital
+## 🎨 Project Fun: Kartu Profil Keren (Pemula / SD-SMA)
 
-Setelah menyelesaikan 3 JP materi dasar, kerjakan project yang lebih besar!
+Project interaktif dengan pendekatan gamifikasi (seperti misi game 🎮). Sangat cocok untuk anak SD-SMA yang baru belajar coding agar tidak bosan!
+
+- 💻 **Langsung Jalan:** Murid tinggal jalankan template dan langsung melihat halaman profil keren.
+- 🎨 **Misi Kustomisasi:** Belajar dengan cara mengkustomisasi warna, emoji, teks, dan link sosial media sendiri.
+- ⚡ **Animasi & Interaktif:** Dilengkapi visual menarik, animasi skill bar, efek glassmorphism, dan efek hover keren.
+- 🏆 **Sistem Achievement:** Menggunakan pendekatan misi 1 s.d. 5 dengan reward *Achievement Unlocked*!
+
+**👉 [Mulai Project Kartu Profil Keren](./project-kartu-profil/README.md)**
+
+---
+
+## 🏪 Project Menengah: Warung Sekolah Digital
+
+Setelah menyelesaikan materi dasar atau Project Kartu Profil, murid bisa mencoba project yang lebih menantang:
 
 - 🍔 Tampilan katalog menu makanan & minuman
 - 🛒 Fitur keranjang belanja
