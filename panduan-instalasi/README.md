@@ -28,7 +28,7 @@ Node.js adalah mesin yang menjalankan JavaScript di luar browser (di komputer ki
 4. Klik **Next** terus-menerus (biarkan semua pengaturan default/bawaan), centang persetujuan, lalu klik **Install**.
 5. Tunggu proses instalasi sampai selesai, lalu klik **Finish**.
 
-### Cara Memeriksa Apakah Node.js Sudah Terinstall:
+### Cara Memeriksa Apakah Node.js Sudah Ter-install:
 1. Buka **Terminal** di VS Code atau **Command Prompt (cmd)** Windows.
 2. Ketik perintah berikut lalu tekan Enter:
    ```bash

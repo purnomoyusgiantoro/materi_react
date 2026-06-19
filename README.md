@@ -30,13 +30,13 @@ Setelah mengikuti 3 jam pelajaran ini, siswa mampu:
 
 ## 🛠️ Persiapan Sebelum Mulai
 
-### Software yang Perlu Diinstall:
+### Software yang Perlu Di-install:
 
 1. **Node.js** (versi LTS) — [Download di sini](https://nodejs.org/)
 2. **Visual Studio Code** — [Download di sini](https://code.visualstudio.com/)
 3. **Browser** (Chrome/Edge/Firefox)
 
-### Cara Cek Apakah Node.js Sudah Terinstall:
+### Cara Cek Apakah Node.js Sudah Ter-install:
 
 Buka **Terminal/Command Prompt**, ketik:
 

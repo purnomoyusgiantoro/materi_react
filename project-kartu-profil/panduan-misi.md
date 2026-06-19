@@ -443,6 +443,86 @@ Di `App.css`, ganti `.app-background`:
 
 ---
 
+## 📡 MISI 6: Hubungkan ke Backend (EXTRA QUEST! 🚀)
+⏱️ **Waktu:** 15 menit | **Difficulty:** ⭐⭐⭐⭐ (Expert)
+
+### 📋 Objektif
+Hubungkan frontend React kamu agar mengambil data profil secara dinamis dari API server backend yang berjalan di port `3001`!
+
+### Step 1: Nyalakan Kedua Server
+Pastikan `kartu-profil-backend` dan `kartu-profil-frontend` sedang berjalan seperti di Misi 1.
+
+### Step 2: Modifikasi `App.jsx`
+Buka file `kartu-profil-frontend/src/App.jsx`. Kita akan mengubah data profil statis menjadi dinamis menggunakan state dan `useEffect`.
+
+1. Di baris paling atas, pastikan `useEffect` sudah di-import dari React:
+   ```jsx
+   import React, { useState, useEffect } from "react";
+   ```
+
+2. Tambahkan state baru `profil` dan `loading` di bagian atas fungsi `App()`, lalu hapus (atau komentari) objek `const profil = { ... }` yang statis:
+   ```jsx
+   const [profil, setProfil] = useState(null);
+   const [loading, setLoading] = useState(true);
+   ```
+
+3. Tambahkan `useEffect` untuk mengambil data dari server API saat halaman di-load:
+   ```jsx
+   useEffect(() => {
+     async function ambilDataProfil() {
+       try {
+         const response = await fetch("http://localhost:3001/api/profil");
+         const data = await response.json();
+         setProfil(data);
+       } catch (error) {
+         console.error("Gagal mengambil data profil:", error);
+       } finally {
+         setLoading(false);
+       }
+     }
+     ambilDataProfil();
+   }, []);
+   ```
+
+4. Karena pengambilan data bersifat asinkron (butuh waktu), tambahkan kondisi loading di bagian atas (sebelum baris `return (...)` JSX utama):
+   ```jsx
+   if (loading) {
+     return (
+       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', background: '#1a1a2e', color: '#fff', fontFamily: 'Poppins, sans-serif' }}>
+         <h2>Loading Profil... 🚀</h2>
+       </div>
+     );
+   }
+
+   if (!profil) {
+     return (
+       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', background: '#1a1a2e', color: '#fff', fontFamily: 'Poppins, sans-serif' }}>
+         <h2>Profil gagal dimuat. Pastikan server backend sudah berjalan di port 3001! 🔌</h2>
+       </div>
+     );
+   }
+   ```
+
+### Step 3: Lihat Hasilnya!
+Simpan file `App.jsx` dan refresh browser kamu (`http://localhost:5173`).
+Sekarang data yang tampil di kartu profil kamu berasal langsung dari server backend (`http://localhost:3001/api/profil`).
+
+### Step 4: Coba Ubah Data di Backend!
+Buka file `kartu-profil-backend/index.js`, ubah isi objek `profil` (misal ubah nama atau skill-mu).
+Setelah itu, restart server backend (`Ctrl+C` lalu `node index.js`).
+Refresh browser frontend kamu, dan lihat data baru otomatis terupdate tanpa kamu perlu menyentuh file frontend `App.jsx` lagi! 🤯
+
+### 🏆 Achievement Unlocked: FULL-STACK ENGINEER!
+```
+╔════════════════════════════════════════════╗
+║  🏆 ACHIEVEMENT: FULL-STACK ENGINEER!      ║
+║  Frontend dan Backend berhasil terhubung   ║
+║  secara dinamis via Fetch API! 📡          ║
+╚════════════════════════════════════════════╝
+```
+
+---
+
 ## 🎊 MISI SELESAI! SELAMAT!
 
 ```
@@ -457,7 +537,8 @@ Di `App.css`, ganti `.app-background`:
 ║    ✅ Identity Claimed                           ║
 ║    ✅ Skill Flexer                               ║
 ║    ✅ Connected                                  ║
-║    ✅ Creative Legend                             ║
+║    ✅ Creative Legend                            ║
+║    ✅ Full-Stack Engineer                        ║
 ║                                                  ║
 ║    Sekarang PAMER ke teman-teman kamu! 😎        ║
 ║                                                  ║

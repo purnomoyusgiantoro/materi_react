@@ -81,7 +81,7 @@
 Server sebelumnya masih berjalan. Hentikan dulu dengan `Ctrl + C`, lalu jalankan lagi.
 
 ### Error: "module not found"
-Package belum terinstall. Jalankan:
+Package belum ter-install. Jalankan:
 ```bash
 npm install
 ```

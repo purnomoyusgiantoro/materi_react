@@ -73,7 +73,7 @@ const tambah = (a, b) => {
 };
 
 // Arrow function (lebih singkat — kalau cuma 1 baris)
-const tambah = (a, b) => a + b;
+const tambahSingkat = (a, b) => a + b;
 
 // Arrow function tanpa parameter
 const sapa = () => console.log('Halo!');
